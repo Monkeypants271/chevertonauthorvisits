@@ -34,7 +34,7 @@ const techNeeds = [
   "Projector or large display",
   "Screen or smartboard",
   "Audio/microphone for large groups",
-  "Laptop connection or ability to run slides",
+  "A way to run Google Slides — Mark can use his own laptop or computer, or share his slides with the person logged into the school's computer",
   "Internet access if needed",
   "Table for books/signing",
 ];
