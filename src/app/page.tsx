@@ -237,12 +237,12 @@ export default function HomePage() {
       <Section tone="white" ariaLabel="Student stories">
         <div className="rounded-3xl bg-navy-900 px-6 py-12 text-center sm:px-12">
           <h2 className="mx-auto max-w-2xl text-3xl font-bold text-white sm:text-4xl">
-            Give Students a Real Audience for Their Writing
+            Give Students an Authentic Audience for Their Writing
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-navy-100">
             After the visit, students are invited to write and submit their own
-            stories. Many student stories are shared on Mark&apos;s main author
-            website, giving young writers a real audience for their work.
+            stories. All stories sent to Mark will be posted to his Fan Fiction
+            page for other kids to read.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <CTAButton href={site.mainSite} variant="primary">
