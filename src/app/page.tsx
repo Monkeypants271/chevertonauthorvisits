@@ -241,8 +241,15 @@ export default function HomePage() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-navy-100">
             After the visit, students are invited to write and submit their own
-            stories. All stories sent to Mark will be posted to his Fan Fiction
-            page for other kids to read.
+            stories by emailing them to{" "}
+            <a
+              href="mailto:MarkTheMinecraftAuthor@gmail.com"
+              className="font-semibold text-cyan-bright underline-offset-4 hover:underline"
+            >
+              MarkTheMinecraftAuthor@gmail.com
+            </a>
+            . Every story Mark receives will be posted to his kid-safe Fan
+            Fiction page for other kids to read.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <CTAButton href={site.mainSite} variant="primary">
