@@ -175,12 +175,19 @@ export default function TeacherResourcesPage() {
       <Section tone="white" ariaLabel="Student story submission">
         <div className="rounded-3xl bg-navy-900 px-6 py-12 text-center sm:px-12">
           <h2 className="mx-auto max-w-2xl text-3xl font-bold text-white sm:text-4xl">
-            Give Students a Real Audience
+            Give Students an Authentic Audience for their Stories
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-navy-100">
-            After the presentation, students can write and submit their own
-            stories. Selected stories may be shared on Mark&apos;s main author
-            website so young writers can see their work reach a real audience.
+            At the end of the presentation, students are encouraged to write and
+            submit their stories to Mark, emailing them to{" "}
+            <a
+              href="mailto:MarkTheMinecraftAuthor@gmail.com"
+              className="font-semibold text-cyan-bright underline-offset-4 hover:underline"
+            >
+              MarkTheMinecraftAuthor@gmail.com
+            </a>
+            . Every story Mark receives will be posted to his kid-safe Fan
+            Fiction page.
           </p>
           <div className="mt-8">
             <CTAButton href={site.mainSite} variant="primary">
