@@ -19,6 +19,8 @@ export default function Footer() {
           <p className="mt-2 text-sm">
             <a
               href={site.mainSite}
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-medium text-cyan-bright underline-offset-4 hover:underline"
             >
               markcheverton.com

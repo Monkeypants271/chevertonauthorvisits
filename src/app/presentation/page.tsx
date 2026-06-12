@@ -106,12 +106,22 @@ export default function PresentationPage() {
 
       {/* Q&A */}
       <Section tone="white" ariaLabel="Question and answer time">
-        <div className="max-w-3xl">
+        <div className="grid items-center gap-10 lg:grid-cols-2">
           <SectionHeading
             eyebrow="Q&amp;A"
             title="Plenty of Time for Student Questions"
             intro="Students ask about publishing, writing, Minecraft, favorite books, how stories are made, and what it feels like to become an author after years of failure. Mark prefers smaller groups whenever possible because more students get to participate."
           />
+          <div className="overflow-hidden rounded-2xl shadow-md ring-1 ring-navy-100">
+            <Image
+              src="/author-visit-students-2.jpg"
+              alt="Mark Cheverton gestures during a school presentation while students raise their hands, beside a screen reading “What did I learn from this experience?”"
+              width={1100}
+              height={1100}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="h-full w-full object-cover"
+            />
+          </div>
         </div>
       </Section>
 

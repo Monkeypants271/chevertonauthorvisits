@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ComponentProps } from "react";
+import { isExternalHref, newTabProps } from "@/lib/links";
 
 type Variant = "primary" | "secondary" | "ghost";
 
@@ -32,6 +33,7 @@ export default function CTAButton({
     <Link
       href={href}
       className={`${base} ${variants[variant]} ${className}`}
+      {...(isExternalHref(href) ? newTabProps : {})}
       {...rest}
     >
       {children}

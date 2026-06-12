@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Growth Mindset Author Visits for Schools | Mark Cheverton",
     description:
       "A true story about 253 rejections, bullying, Minecraft, and the courage to keep trying — brought to elementary and middle schools.",
-    images: ["/author-visit-hero.png"],
+    images: ["/author-visit-hero.jpg"],
   },
 };
 
@@ -108,10 +108,10 @@ export default function HomePage() {
           </div>
           <div className="overflow-hidden rounded-2xl shadow-xl ring-1 ring-white/10">
             <Image
-              src="/author-visit-hero.png"
-              alt="Mark Cheverton standing beside a school presenter during an author visit while students sit in front of a screen reading Mark Cheverton Author."
-              width={1200}
-              height={900}
+              src="/author-visit-hero.jpg"
+              alt="Mark Cheverton and a teacher present at the front of a school gym to seated students, beside a screen reading “Mark Cheverton, Author” with a Minecraft creeper."
+              width={1348}
+              height={941}
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="h-full w-full object-cover"
@@ -125,11 +125,23 @@ export default function HomePage() {
 
       {/* 3. What Students Experience */}
       <Section tone="white" ariaLabel="What students experience">
-        <SectionHeading
-          eyebrow="What Students Experience"
-          title="An honest story students remember"
-          intro="Students laugh, participate, ask questions, and hear an honest, age-appropriate story about rejection, false starts, bullying, perseverance, and learning from failure."
-        />
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <SectionHeading
+            eyebrow="What Students Experience"
+            title="An honest story students remember"
+            intro="Students laugh, participate, ask questions, and hear an honest, age-appropriate story about rejection, false starts, bullying, perseverance, and learning from failure."
+          />
+          <div className="overflow-hidden rounded-2xl shadow-md ring-1 ring-navy-100">
+            <Image
+              src="/author-visit-students-1.jpg"
+              alt="Mark Cheverton presents in a school library as students raise their hands, beside a screen reading “Don’t let other people’s no’s define you.”"
+              width={1100}
+              height={1100}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </div>
         <FeatureCards items={studentExperience} />
       </Section>
 

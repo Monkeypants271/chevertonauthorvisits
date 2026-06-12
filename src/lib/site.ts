@@ -4,6 +4,8 @@ export const site = {
   mainSite: "https://www.markcheverton.com",
   tagline: "New York Times bestselling author",
   boces: "Mark is registered with BOCES Arts-in-Education.",
+  // Mark's BOCES Arts-in-Education (NYS Arts Enrichment) listing.
+  bocesUrl: "https://nysartsenrichment.org/details?sku=686",
   // Canonical site URL — used for absolute Open Graph / social-share URLs.
   url: "https://www.chevertonauthorvisits.com",
 };

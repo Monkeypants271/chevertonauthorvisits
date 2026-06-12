@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import CTAButton from "@/components/CTAButton";
 import Section, { SectionHeading } from "@/components/Section";
 import ImageTextSection from "@/components/ImageTextSection";
+import BocesCard from "@/components/BocesCard";
 import FinalCTA from "@/components/FinalCTA";
 import { site } from "@/lib/site";
 
@@ -172,10 +173,17 @@ export default function ForSchoolsPage() {
 
       {/* BOCES + Pricing */}
       <Section tone="cream" ariaLabel="BOCES and pricing">
-        <div className="grid gap-8 lg:grid-cols-2">
-          <div className="rounded-2xl border border-navy-100 bg-white p-8 shadow-sm">
+        <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
+          <div>
             <h2 className="text-2xl font-bold text-navy-900">BOCES Arts-in-Education</h2>
-            <p className="mt-3 text-lg text-ink-soft">{site.boces}</p>
+            <p className="mt-3 text-lg text-ink-soft">
+              {site.boces} Schools in the Capital District can review Mark&apos;s
+              program and request him directly through his NYS Arts Enrichment
+              listing.
+            </p>
+            <div className="mt-6">
+              <BocesCard />
+            </div>
           </div>
           <div className="rounded-2xl border border-navy-100 bg-white p-8 shadow-sm">
             <h2 className="text-2xl font-bold text-navy-900">Pricing</h2>
