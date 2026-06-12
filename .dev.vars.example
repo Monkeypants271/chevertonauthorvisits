@@ -1,0 +1,16 @@
+# Local secrets for `npx wrangler pages dev` (Pages Function testing).
+# Copy to `.dev.vars` (gitignored) and fill in. The values below are Cloudflare's
+# TEST keys: the Turnstile secret always passes, so you can test the flow locally.
+
+# Turnstile secret — TEST key that always passes verification.
+TURNSTILE_SECRET_KEY=1x0000000000000000000000000000000AA
+
+# Resend API key — get a real one from resend.com to actually send mail.
+RESEND_API_KEY=
+
+# Where leads are delivered.
+CONTACT_TO=Mark.Cheverton1@gmail.com
+
+# Verified Resend sender. Until you verify a domain, Resend's test sender only
+# delivers to your own account email.
+CONTACT_FROM=Author Visits <onboarding@resend.dev>
