@@ -55,7 +55,7 @@ const visitSteps = [
   },
   {
     title: "Morning Presentations",
-    body: "Mark typically meets with grade-level groups in the library, cafeteria, or auditorium. Groups of 30–50 students are ideal because more students get the chance to ask questions. Each presentation is usually around 45 minutes and can be adjusted to fit the school schedule.",
+    body: "The school has Mark for the full day. Through the morning, up until lunch, he gives multiple presentations to grade-level groups — from grade 3 through middle school — in the library, cafeteria, or auditorium. Mark prefers smaller groups because more students get to ask questions and the visit feels more personal, but he can accommodate any group size and any number of presentations the schedule calls for. Each presentation runs about 45 minutes and can be adjusted to fit your day.",
   },
   {
     title: "Lunch with Students",
@@ -169,7 +169,7 @@ export default function HomePage() {
           </p>
         </div>
         <div className="mt-12">
-          <PullQuote>If I quit, I guarantee the outcome.</PullQuote>
+          <PullQuote>If I give up, I guarantee the outcome.</PullQuote>
         </div>
       </Section>
 

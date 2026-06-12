@@ -149,10 +149,10 @@ export default function PresentationPage() {
           />
           <div className="overflow-hidden rounded-2xl shadow-md ring-1 ring-navy-100">
             <Image
-              src="/author-visit-students-2.jpg"
-              alt="Mark Cheverton gestures during a school presentation while students raise their hands, beside a screen reading “What did I learn from this experience?”"
-              width={1100}
-              height={1100}
+              src="/author-visit-qa.jpg"
+              alt="Mark Cheverton takes questions from students in a school library, beside a screen reading “Questions? Q&A,” as several students raise their hands."
+              width={1200}
+              height={1200}
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="h-full w-full object-cover"
             />

@@ -8,14 +8,7 @@ const fieldClass =
   "mt-1 block w-full rounded-lg border border-navy-200 bg-white px-3 py-2.5 text-ink shadow-sm focus:border-cyan-accent focus:outline-none focus:ring-2 focus:ring-cyan-bright/40";
 const labelClass = "block text-sm font-semibold text-navy-900";
 
-const gradeOptions = [
-  "Pre-K / Kindergarten",
-  "Grades 1–2",
-  "Grades 3–5",
-  "Grades 6–8",
-  "High school",
-  "Mixed / multiple grades",
-];
+const gradeOptions = ["Grades 3–5", "Grades 6–8", "Mixed"];
 
 type Status = "idle" | "submitting" | "success" | "error";
 
