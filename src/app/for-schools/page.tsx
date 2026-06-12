@@ -109,7 +109,7 @@ export default function ForSchoolsPage() {
           <SectionHeading
             eyebrow="Group Size"
             title="Smaller Groups, More Participation"
-            intro="Mark can speak to larger groups, but he prefers grade-level groups of about 30–50 students when possible. Smaller groups give more students a chance to ask questions and make the visit feel more personal."
+            intro="Mark can speak with larger groups, but he prefers doing multiple presentations to smaller grade-level groups when possible. Smaller groups give more students a chance to ask questions and make the visit feel more personal."
           />
         </div>
       </Section>
