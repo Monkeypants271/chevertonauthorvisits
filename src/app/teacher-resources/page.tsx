@@ -190,7 +190,7 @@ export default function TeacherResourcesPage() {
             Fiction page.
           </p>
           <div className="mt-8">
-            <CTAButton href={site.mainSite} variant="primary">
+            <CTAButton href={site.fanFiction} variant="primary">
               View Student Stories on MarkCheverton.com
             </CTAButton>
           </div>

@@ -2,6 +2,7 @@ export const site = {
   name: "Mark Cheverton Author Visits",
   email: "Mark.Cheverton1@gmail.com",
   mainSite: "https://www.markcheverton.com",
+  fanFiction: "https://www.markcheverton.com/fanfic",
   tagline: "New York Times bestselling author",
   boces: "Mark is registered with BOCES Arts-in-Education.",
   // Mark's BOCES Arts-in-Education (NYS Arts Enrichment) listing.
