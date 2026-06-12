@@ -2,7 +2,7 @@ import CTAButton from "./CTAButton";
 
 export default function FinalCTA({
   title = "Bring Mark to Your School",
-  body = "Every school is different, so pricing depends on location, schedule, format, and number of presentations. Request availability and Mark will follow up with details.",
+  body = "Every school is different, so pricing depends on the format of your visit and your location. Schools outside the New York Capital District may have additional travel costs. Request availability and Mark will follow up with details.",
 }: {
   title?: string;
   body?: string;

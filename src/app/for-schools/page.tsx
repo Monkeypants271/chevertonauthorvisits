@@ -188,8 +188,9 @@ export default function ForSchoolsPage() {
           <div className="rounded-2xl border border-navy-100 bg-white p-8 shadow-sm">
             <h2 className="text-2xl font-bold text-navy-900">Pricing</h2>
             <p className="mt-3 text-lg text-ink-soft">
-              Pricing depends on location, format, schedule, and number of
-              presentations. Schools can request pricing and availability through
+              Pricing depends on the format of your visit and your location.
+              Schools outside the New York Capital District may have additional
+              travel costs. Schools can request pricing and availability through
               the contact form.
             </p>
             <div className="mt-6">
