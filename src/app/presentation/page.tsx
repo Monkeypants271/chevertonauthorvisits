@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import CTAButton from "@/components/CTAButton";
 import Section, { SectionHeading } from "@/components/Section";
-import FeatureCards from "@/components/FeatureCards";
+import PullQuote from "@/components/PullQuote";
 import FinalCTA from "@/components/FinalCTA";
 
 export const metadata: Metadata = {
@@ -17,22 +17,27 @@ export const metadata: Metadata = {
   },
 };
 
-const arc = [
-  "I wanted to write a book for my son",
-  "That book received 253 rejections",
-  "I wrote three more books, and they failed too",
-  "My son was bullied while playing Minecraft",
-  "I wrote one more story to help him understand",
-  "That story became the breakthrough",
-];
-
-const takeaways = [
-  { title: "Failure is not the end" },
-  { title: "Bullying is not your fault" },
-  { title: "Trying hard things matters" },
-  { title: "Creativity can help solve real problems" },
-  { title: "Stories can help us understand ourselves" },
-  { title: "Your story matters" },
+const storyThemes = [
+  {
+    title: "Failure",
+    body: "253 rejections and seven years of trying before success.",
+  },
+  {
+    title: "Courage",
+    body: "Writing one more story when quitting would have been easier.",
+  },
+  {
+    title: "Growth",
+    body: "Learning that failure is not the end. It is information.",
+  },
+  {
+    title: "Empathy",
+    body: "Understanding that being bullied is never the victim's fault.",
+  },
+  {
+    title: "Persistence",
+    body: "The simple message students remember: If you quit, you guarantee the outcome.",
+  },
 ];
 
 export default function PresentationPage() {
@@ -77,31 +82,61 @@ export default function PresentationPage() {
         </div>
       </section>
 
-      {/* The Arc of the Talk */}
-      <Section tone="white" ariaLabel="The arc of the talk">
-        <SectionHeading eyebrow="The Arc of the Talk" title="How the Story Unfolds" />
-        <ol className="mt-10 space-y-4">
-          {arc.map((step, i) => (
-            <li
-              key={step}
-              className="flex items-center gap-4 rounded-2xl border border-navy-100 bg-cream p-5"
-            >
-              <span
-                className="flex h-9 w-9 flex-none items-center justify-center rounded-full bg-navy-900 text-base font-bold text-white"
-                aria-hidden="true"
-              >
-                {i + 1}
-              </span>
-              <span className="text-lg font-medium text-navy-900">{step}</span>
-            </li>
-          ))}
-        </ol>
+      {/* The Story */}
+      <Section tone="white" ariaLabel="The story Mark tells">
+        <div className="mx-auto max-w-3xl">
+          <SectionHeading
+            eyebrow="The Presentation"
+            title="253 Rejections. One More Try."
+          />
+          <div className="mt-6 space-y-5 text-lg leading-relaxed text-ink-soft">
+            <p>
+              Mark Cheverton&apos;s author visit is a funny, honest, and deeply
+              personal growth mindset presentation about failure, persistence,
+              and the power of stories.
+            </p>
+            <p>
+              Mark begins with the truth students rarely hear from successful
+              authors: before his books reached readers around the world, he
+              spent seven years writing four books that no one wanted to publish.
+              His first book alone received 253 rejections.
+            </p>
+            <p>
+              Then, ten years ago, Mark&apos;s son was bullied while playing
+              Minecraft and believed it was his fault. Mark tried to explain that
+              it wasn&apos;t, but the words didn&apos;t reach him. So Mark did
+              what he knew how to do. He wrote one more story.
+            </p>
+            <p>
+              That Minecraft-inspired story helped his son understand the truth:
+              being bullied was not his fault. It also became the breakthrough
+              that launched Mark&apos;s bestselling author career.
+            </p>
+            <p>
+              Students leave the presentation with a message they can carry into
+              writing, school, friendships, and life:
+            </p>
+          </div>
+          <div className="mt-10">
+            <PullQuote>If you give up, you guarantee the outcome.</PullQuote>
+          </div>
+        </div>
       </Section>
 
-      {/* Student Takeaways */}
-      <Section tone="cream" ariaLabel="Student takeaways">
-        <SectionHeading eyebrow="Student Takeaways" title="What Students Walk Away With" />
-        <FeatureCards items={takeaways} />
+      {/* Students Hear a Story About */}
+      <Section tone="cream" ariaLabel="Students hear a story about">
+        <SectionHeading eyebrow="The Message" title="Students Hear a Story About" />
+        <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+          {storyThemes.map((t) => (
+            <li
+              key={t.title}
+              className="rounded-2xl border border-navy-100 bg-white p-6 shadow-sm"
+            >
+              <h3 className="text-lg font-bold text-cyan-accent">{t.title}</h3>
+              <p className="mt-2 text-ink-soft">{t.body}</p>
+            </li>
+          ))}
+        </ul>
       </Section>
 
       {/* Q&A */}
