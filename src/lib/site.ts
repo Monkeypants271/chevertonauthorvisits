@@ -4,8 +4,8 @@ export const site = {
   mainSite: "https://www.markcheverton.com",
   tagline: "New York Times bestselling author",
   boces: "Mark is registered with BOCES Arts-in-Education.",
-  // Used for absolute Open Graph URLs. Update once the production domain is known.
-  url: "https://authorvisits.markcheverton.com",
+  // Canonical site URL — used for absolute Open Graph / social-share URLs.
+  url: "https://www.chevertonauthorvisits.com",
 };
 
 // Public Cloudflare Turnstile site key. Set NEXT_PUBLIC_TURNSTILE_SITE_KEY in the
