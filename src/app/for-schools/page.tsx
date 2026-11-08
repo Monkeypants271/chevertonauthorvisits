@@ -188,6 +188,13 @@ export default function ForSchoolsPage() {
           <div className="rounded-2xl border border-navy-100 bg-white p-8 shadow-sm">
             <h2 className="text-2xl font-bold text-navy-900">Pricing</h2>
             <p className="mt-3 text-lg text-ink-soft">
+              Full-day, in-person school visits: $2,000. The visit includes
+              multiple student presentations, Q&amp;A, lunch with selected students
+              when schedules allow, and book autographing. The schedule is
+              tailored to the school. Travel costs may apply outside the Capital
+              District. Virtual visits and other formats are priced separately.
+            </p>
+            <p className="mt-3 text-lg text-ink-soft">
               Pricing depends on the format of your visit and your location.
               Schools outside the New York Capital District may have additional
               travel costs. Schools can request pricing and availability through

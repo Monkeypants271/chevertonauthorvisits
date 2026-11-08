@@ -21,6 +21,11 @@ export default function RequestPricingPage() {
             details about your event, and Mark will follow up with availability,
             pricing, and next steps.
           </p>
+          <p className="mt-4 text-lg text-navy-100">
+            Full-day, in-person school visits: $2,000. Travel costs may apply
+            outside the Capital District. Virtual visits and other formats are
+            priced separately.
+          </p>
         </div>
       </section>
 

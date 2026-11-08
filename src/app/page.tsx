@@ -101,6 +101,10 @@ export default function HomePage() {
                 See the Presentation
               </CTAButton>
             </div>
+            <p className="mt-4 text-sm text-navy-100">
+              Full-day, in-person visits start at $2,000. Travel costs may apply
+              outside the Capital District.
+            </p>
             <p className="mt-6 text-sm text-navy-200">
               For elementary and middle schools, libraries, literacy programs,
               and growth mindset events.
