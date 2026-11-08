@@ -178,6 +178,9 @@ export default function RequestPricingPage() {
                 Full-day, in-person school visit:{" "}
                 <span className="mt-2 block text-5xl font-bold tracking-tight">$2,000</span>
               </h3>
+              <p className="mt-5 border-t border-white/20 pt-4 font-semibold leading-relaxed text-navy-100">
+                Add an after-school storywriting workshop for $300.
+              </p>
             </div>
             <div className="p-6 sm:p-8">
               <h4 className="text-lg font-bold text-navy-900">Your school receives</h4>
@@ -196,6 +199,73 @@ export default function RequestPricingPage() {
                 <p className="mt-2">Virtual visits and other formats are priced separately.</p>
               </div>
               <div className="mt-6"><VisitButton /></div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section tone="white" ariaLabel="After-School Storywriting Workshop">
+        <div className="grid gap-8 lg:grid-cols-2 lg:items-start lg:gap-12">
+          <div>
+            <SectionHeading title="After-School Storywriting Workshop" />
+            <p className="mt-4 text-xl font-semibold text-navy-700">
+              Turn a story idea into an adventure!
+            </p>
+            <p className="mt-5 text-lg leading-relaxed text-ink-soft">
+              In this one-hour, hands-on workshop, students work with New York
+              Times bestselling author and former teacher Mark Cheverton to
+              create their own stories. Using a story-building packet, young
+              writers explore their character, setting, and main problem, then
+              follow the story from the first spark of trouble to an ending
+              shaped by their hero&apos;s choices.
+            </p>
+            <p className="mt-5 text-lg leading-relaxed text-ink-soft">
+              Students can write about whatever excites them, whether that&apos;s
+              a Minecraft adventure, a mystery, a fantasy world, or a sandwich
+              that refuses to be eaten.
+            </p>
+            <p className="mt-5 text-lg leading-relaxed text-ink-soft">
+              Each student receives a story-building packet to guide their ideas
+              and help them continue writing after the workshop.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-navy-100 bg-cream p-6 shadow-sm sm:p-8">
+            <h3 className="text-2xl font-bold text-navy-900">Workshop details</h3>
+            <dl className="mt-5 space-y-3 text-ink-soft">
+              <div className="flex flex-wrap gap-x-2">
+                <dt className="font-semibold text-navy-900">Length:</dt>
+                <dd>60 minutes</dd>
+              </div>
+              <div className="flex flex-wrap gap-x-2">
+                <dt className="font-semibold text-navy-900">Recommended for:</dt>
+                <dd>Grades 3–6</dd>
+              </div>
+              <div className="flex flex-wrap gap-x-2">
+                <dt className="font-semibold text-navy-900">Group size:</dt>
+                <dd>Maximum 20 students</dd>
+              </div>
+            </dl>
+            <p className="mt-5 rounded-xl border-l-4 border-navy-700 bg-white p-4 leading-relaxed text-navy-900">
+              <strong>Supervision:</strong> A teacher must be present throughout
+              the workshop.
+            </p>
+            <dl className="mt-6 grid gap-4 sm:grid-cols-2">
+              <div className="rounded-xl bg-navy-900 p-5 text-white">
+                <dt className="text-sm font-medium text-navy-100">Booked with an author visit</dt>
+                <dd className="mt-2 text-3xl font-bold">$300</dd>
+              </div>
+              <div className="rounded-xl border border-navy-100 bg-white p-5 text-navy-900">
+                <dt className="text-sm font-medium">Booked as a standalone workshop</dt>
+                <dd className="mt-2 text-3xl font-bold">$400</dd>
+              </div>
+            </dl>
+            <p className="mt-6 text-sm leading-relaxed text-ink-soft">
+              Mention the workshop in your message when you request availability.
+            </p>
+            <div className="mt-4">
+              <CTAButton href="#contact" className="w-full bg-[#107aa0]! text-center hover:bg-navy-700! sm:w-auto">
+                Ask About the Workshop
+              </CTAButton>
             </div>
           </div>
         </div>
