@@ -8,16 +8,17 @@ import VisitTimeline from "@/components/VisitTimeline";
 import TestimonialCards from "@/components/TestimonialCards";
 import PullQuote from "@/components/PullQuote";
 import FinalCTA from "@/components/FinalCTA";
+import StoryDogsPreview from "@/components/StoryDogsPreview";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Growth Mindset Author Visits for Schools | Mark Cheverton",
+  title: "StoryDogs & Growth Mindset Author Visits | Mark Cheverton",
   description:
-    "New York Times bestselling author Mark Cheverton brings growth mindset author visits to elementary and middle schools with a true story about failure, bullying, Minecraft, and persistence.",
+    "Explore StoryDogs for grades K–3 and Growth Mindset for grades 3–6 with New York Times bestselling author Mark Cheverton. Plan a school visit shaped around your students.",
   openGraph: {
-    title: "Growth Mindset Author Visits for Schools | Mark Cheverton",
+    title: "StoryDogs & Growth Mindset Author Visits | Mark Cheverton",
     description:
-      "A true story about 253 rejections, bullying, Minecraft, and the courage to keep trying — brought to elementary and middle schools.",
+      "Two school presentations: imaginative storytelling with StoryDogs for grades K–3, and a true story of persistence with Growth Mindset for grades 3–6.",
     images: ["/author-visit-hero.jpg"],
   },
 };
@@ -55,7 +56,7 @@ const visitSteps = [
   },
   {
     title: "Morning Presentations",
-    body: "The school has Mark for the full day. Through the morning, up until lunch, he gives multiple presentations to grade-level groups — from grade 3 through middle school — in the library, cafeteria, or auditorium. Mark prefers smaller groups because more students get to ask questions and the visit feels more personal, but he can accommodate any group size and any number of presentations the schedule calls for. Each presentation runs about 45 minutes and can be adjusted to fit your day.",
+    body: "The school has Mark for the full day. A visit can include StoryDogs for younger students in grades K–3 and Growth Mindset for older students in grades 3–6. Mark can present in the library, cafeteria, or auditorium, with one large assembly or multiple grade-level sessions. The presentation choices, group sizes, and schedule are arranged to fit your school.",
   },
   {
     title: "Lunch with Students",
@@ -64,6 +65,11 @@ const visitSteps = [
   {
     title: "Book Signing",
     body: "After lunch, Mark autographs pre-ordered books and books students already own. Book sales are optional and never the focus of the visit. The heart of the day is the time spent with students.",
+  },
+  {
+    title: "After-School Storywriting Workshop (Optional)",
+    body: "Add a one-hour, hands-on workshop for up to 20 students in grades 3–6. Each student receives a story-building packet to take home. A teacher must be present throughout the workshop. The workshop is $300 when added to an in-person author visit.",
+    href: "/#after-school-workshop",
   },
 ];
 
@@ -86,19 +92,19 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2">
           <div>
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-              Author Visits That Turn Failure Into Real Growth
+              Author Visits That Spark Stories and Growth
             </h1>
             <p className="mt-6 text-lg text-navy-100">
-              New York Times bestselling author Mark Cheverton shares the true
-              story of 253 rejections, seven years of failure, a son who was
-              bullied, and the Minecraft-inspired book that changed everything.
+              New York Times bestselling author and former teacher Mark
+              Cheverton brings imaginative storytelling and growth mindset to
+              your school, with two presentations for different age groups.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <CTAButton href="/request-pricing" variant="primary">
                 Request Pricing &amp; Availability
               </CTAButton>
-              <CTAButton href="/presentation" variant="ghost">
-                See the Presentation
+              <CTAButton href="/#programs" variant="ghost">
+                Explore Both Programs
               </CTAButton>
             </div>
             <p className="mt-4 text-sm text-navy-100">
@@ -127,11 +133,54 @@ export default function HomePage() {
       {/* 2. Quick Credibility Strip */}
       <CredibilityStrip />
 
+      <section id="programs" aria-labelledby="programs-heading" className="scroll-mt-20 bg-cream">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+          <h2 id="programs-heading" className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">
+            Two presentations. A fit for your students.
+          </h2>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <article className="flex flex-col overflow-hidden rounded-2xl border border-navy-100 bg-white shadow-sm">
+              <StoryDogsPreview />
+              <div className="flex flex-1 flex-col p-6 sm:p-8">
+                <p className="self-start rounded-full bg-navy-50 px-3 py-1 text-sm font-bold text-navy-700">Grades K–3</p>
+                <h3 className="mt-4 text-3xl font-bold text-navy-900">StoryDogs</h3>
+                <p className="mt-3 flex-1 text-lg leading-relaxed text-ink-soft">
+                  A playful, interactive storytelling experience for younger
+                  students. During the presentation, we’ll create a story
+                  together. With the help of some memorable dogs, students
+                  explore how stories take shape, from creating a hero to
+                  imagining the challenges that hero might face. Together,
+                  we’ll discover that everyone has ideas worth sharing.
+                </p>
+                <div className="mt-6">
+                  <CTAButton href="/request-pricing#storydogs" className="w-full bg-[#107aa0]! text-center hover:bg-navy-700! sm:w-auto">Explore StoryDogs</CTAButton>
+                </div>
+              </div>
+            </article>
+            <article className="flex flex-col overflow-hidden rounded-2xl border border-navy-100 bg-white shadow-sm">
+              <Image src="/author-visit-students-1.jpg" alt="Mark Cheverton presenting Growth Mindset to students raising their hands in a school library" width={1100} height={1100} sizes="(max-width: 768px) 100vw, 560px" className="h-80 w-full object-cover object-top" />
+              <div className="flex flex-1 flex-col p-6 sm:p-8">
+                <p className="self-start rounded-full bg-navy-700 px-3 py-1 text-sm font-bold text-white">Grades 3–6</p>
+                <h3 className="mt-4 text-3xl font-bold text-navy-900">Growth Mindset</h3>
+                <p className="mt-3 flex-1 text-lg leading-relaxed text-ink-soft">
+                  Through humor, audience participation, and the true story
+                  behind his Minecraft novels, Mark shows students how setbacks,
+                  persistence, and learning from mistakes can help them grow.
+                </p>
+                <div className="mt-6">
+                  <CTAButton href="/request-pricing#growth-mindset" className="w-full bg-[#107aa0]! text-center hover:bg-navy-700! sm:w-auto">Explore Growth Mindset</CTAButton>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       {/* 3. What Students Experience */}
-      <Section tone="white" ariaLabel="What students experience">
+      <Section tone="white" ariaLabel="What students experience in Growth Mindset">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <SectionHeading
-            eyebrow="What Students Experience"
+            eyebrow="Growth Mindset · Grades 3–6"
             title="An honest story students remember"
             intro="Students laugh, participate, ask questions, and hear an honest, age-appropriate story about rejection, false starts, bullying, perseverance, and learning from failure."
           />
@@ -150,9 +199,9 @@ export default function HomePage() {
       </Section>
 
       {/* 4. The Story Behind the Visit */}
-      <Section tone="cream" ariaLabel="The story behind the visit">
+      <Section tone="cream" ariaLabel="The story behind the Growth Mindset presentation">
         <SectionHeading
-          eyebrow="The Story Behind the Visit"
+          eyebrow="The Story Behind Growth Mindset"
           title="253 Rejections. Seven Years of Failure. One Story That Finally Worked."
         />
         <div className="mt-6 grid gap-6 text-lg text-ink-soft lg:grid-cols-2">
@@ -176,6 +225,97 @@ export default function HomePage() {
           <PullQuote>If I give up, I guarantee the outcome.</PullQuote>
         </div>
       </Section>
+
+      <Section tone="white" ariaLabel="Inside the StoryDogs presentation">
+        <div className="grid items-start gap-10 lg:grid-cols-2">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-wide text-navy-700">
+              StoryDogs · Grades K–3
+            </p>
+            <SectionHeading title="We’ll create a story together" />
+            <p className="mt-5 text-lg leading-relaxed text-ink-soft">
+              How does an idea become an adventure? In StoryDogs, Mark and the
+              students build a story together, with some memorable dogs to guide
+              the way. We’ll imagine a hero, discover what they want, and follow
+              the challenges and choices that shape their story.
+            </p>
+            <p className="mt-5 text-lg leading-relaxed text-ink-soft">
+              StoryDogs follows the storytelling pattern shared as Pixar’s
+              Rule #4: start with a character’s everyday world, introduce a
+              change, and connect what happens next through to the ending.
+              Kids learn how stories take shape while practicing creativity,
+              listening, and working together.
+            </p>
+            <ul className="mt-6 flex flex-wrap gap-3 text-sm font-semibold text-navy-900" aria-label="Skills students practice">
+              <li className="rounded-full bg-navy-50 px-4 py-2">Creativity</li>
+              <li className="rounded-full bg-navy-50 px-4 py-2">Listening</li>
+              <li className="rounded-full bg-navy-50 px-4 py-2">Working together</li>
+            </ul>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <CTAButton href="/request-pricing#storydogs" className="bg-[#107aa0]! text-center hover:bg-navy-700!">Plan a StoryDogs Visit</CTAButton>
+              <CTAButton href={`${site.mainSite}/story-dogs`} variant="secondary" className="text-center" aria-label="Explore the StoryDogs website (opens in a new tab)">Explore StoryDogs ↗</CTAButton>
+            </div>
+          </div>
+          <figure className="overflow-hidden rounded-2xl border border-navy-100 bg-cream shadow-sm">
+            <StoryDogsPreview />
+            <figcaption className="p-6">
+              <p className="font-semibold text-navy-900">A look inside the StoryDogs story builder</p>
+              <p className="mt-2 leading-relaxed text-ink-soft">
+                A preview of the HERO step, using the real StoryDogs artwork,
+                prompt, and a sample story idea.
+              </p>
+              <ol className="mt-4 flex flex-wrap gap-2 text-xs font-bold text-navy-700" aria-label="The seven StoryDogs steps">
+                {["HERO", "WISH", "UH-OH!", "TROUBLE", "YIKES!", "SHOWDOWN", "AFTER!"].map((step, index) => (
+                  <li key={step} className="rounded-lg border border-navy-100 bg-white px-3 py-2">
+                    <span className="mr-1 text-ink-soft">{index + 1}.</span> {step}
+                  </li>
+                ))}
+              </ol>
+            </figcaption>
+          </figure>
+        </div>
+      </Section>
+
+      <section id="after-school-workshop" aria-labelledby="workshop-heading" className="scroll-mt-20 bg-cream">
+        <div className="mx-auto grid max-w-6xl items-start gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2">
+          <div className="overflow-hidden rounded-2xl shadow-md ring-1 ring-navy-100">
+            <Image
+              src="/after-school-storywriting-workshop.png"
+              alt="Mark Cheverton talking with a student while a small group of elementary students work at desks with printed story-building worksheets and pencils"
+              width={1536}
+              height={1024}
+              sizes="(max-width: 1024px) 100vw, 560px"
+              className="h-auto w-full"
+            />
+          </div>
+          <div>
+            <h2 id="workshop-heading" className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">
+              After-School Storywriting Workshop
+            </h2>
+            <p className="mt-5 text-xl font-semibold leading-relaxed text-navy-700">
+              What happens when you give a hero a problem and let a roomful of kids decide what happens next?
+            </p>
+            <p className="mt-5 text-lg leading-relaxed text-ink-soft">
+              In this one-hour, hands-on workshop, Mark helps students build
+              stories of their own. They’ll invent a hero, decide what that hero
+              wants, and make things a little harder every time the hero tries
+              to solve the problem. Each student gets a story-building packet
+              to work through in pencil and take home to keep writing.
+            </p>
+            <p className="mt-6 font-bold text-navy-900">Grades 3–6 · 60 minutes · Up to 20 students</p>
+            <p className="mt-3 rounded-xl border-l-4 border-navy-700 bg-white p-4 font-medium text-navy-900">
+              A teacher must be present throughout the workshop.
+            </p>
+            <div className="mt-6 space-y-2 text-lg text-ink-soft">
+              <p><strong className="text-navy-900">$300</strong> when added to an in-person author visit</p>
+              <p><strong className="text-navy-900">$400</strong> when booked on its own</p>
+            </div>
+            <div className="mt-6">
+              <CTAButton href="/request-pricing#after-school-workshop" className="w-full bg-[#107aa0]! text-center hover:bg-navy-700! sm:w-auto">See Workshop Details</CTAButton>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* 5. Perfect For */}
       <Section tone="white" ariaLabel="Perfect for school events like these">

@@ -1,6 +1,9 @@
+import Link from "next/link";
+
 export type TimelineStep = {
   title: string;
   body: string;
+  href?: string;
 };
 
 export default function VisitTimeline({ steps }: { steps: TimelineStep[] }) {
@@ -17,7 +20,13 @@ export default function VisitTimeline({ steps }: { steps: TimelineStep[] }) {
           >
             {i + 1}
           </span>
-          <h3 className="text-lg font-semibold text-navy-900">{step.title}</h3>
+          <h3 className="text-lg font-semibold text-navy-900">
+            {step.href ? (
+              <Link href={step.href} className="rounded-sm underline decoration-navy-200 underline-offset-4 hover:decoration-navy-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-700">
+                {step.title}
+              </Link>
+            ) : step.title}
+          </h3>
           <p className="mt-2 text-ink-soft">{step.body}</p>
         </li>
       ))}

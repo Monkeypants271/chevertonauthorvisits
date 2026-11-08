@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import CTAButton from "@/components/CTAButton";
 import ContactForm from "@/components/ContactForm";
+import StoryDogsPreview from "@/components/StoryDogsPreview";
 import Section, { SectionHeading } from "@/components/Section";
 import { site } from "@/lib/site";
 
@@ -36,7 +37,7 @@ const inclusions = [
 function VisitButton() {
   return (
     <CTAButton
-      href="#contact"
+      href="/request-pricing#contact"
       className="w-full bg-[#107aa0]! text-center hover:bg-navy-700! sm:w-auto"
     >
       Check Dates &amp; Request a Visit
@@ -89,17 +90,8 @@ export default function RequestPricingPage() {
           intro="Two distinct programs, with a clear fit for each age group."
         />
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          <article className="overflow-hidden rounded-2xl border border-navy-100 bg-white shadow-sm">
-            <div className="flex h-64 items-center justify-center bg-navy-50 p-6 sm:h-72">
-              <Image
-                src="https://www.markcheverton.com/images/story-dogs/who.webp"
-                alt="Orange and white StoryDogs plush corgi wearing a red cape"
-                width={400}
-                height={400}
-                unoptimized
-                className="h-full w-full object-contain"
-              />
-            </div>
+          <article id="storydogs" className="scroll-mt-24 overflow-hidden rounded-2xl border border-navy-100 bg-white shadow-sm">
+            <StoryDogsPreview />
             <div className="p-6 sm:p-8">
               <p className="inline-flex rounded-full bg-navy-50 px-3 py-1 text-sm font-bold text-navy-700">
                 Grades K–3
@@ -108,11 +100,12 @@ export default function RequestPricingPage() {
               <p className="mt-2 text-lg font-semibold text-navy-700">Imagination is where a story begins.</p>
               <p className="mt-3 text-lg leading-relaxed text-ink-soft">
                 A playful, interactive presentation about how stories grow from imagination.
+                During the presentation, we’ll create a story together.
               </p>
             </div>
           </article>
-          <article className="overflow-hidden rounded-2xl border border-navy-100 bg-white shadow-sm">
-            <div className="h-64 overflow-hidden sm:h-72">
+          <article id="growth-mindset" className="scroll-mt-24 overflow-hidden rounded-2xl border border-navy-100 bg-white shadow-sm">
+            <div className="h-80 overflow-hidden">
               <Image
                 src="/author-visit-students-1.jpg"
                 alt="Mark Cheverton presents to students raising their hands in a school library"
@@ -204,7 +197,7 @@ export default function RequestPricingPage() {
         </div>
       </Section>
 
-      <Section tone="white" ariaLabel="After-School Storywriting Workshop">
+      <Section id="after-school-workshop" tone="white" ariaLabel="After-School Storywriting Workshop">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-start lg:gap-12">
           <div>
             <SectionHeading title="After-School Storywriting Workshop" />
@@ -263,7 +256,7 @@ export default function RequestPricingPage() {
               Mention the workshop in your message when you request availability.
             </p>
             <div className="mt-4">
-              <CTAButton href="#contact" className="w-full bg-[#107aa0]! text-center hover:bg-navy-700! sm:w-auto">
+              <CTAButton href="/request-pricing#contact" className="w-full bg-[#107aa0]! text-center hover:bg-navy-700! sm:w-auto">
                 Ask About the Workshop
               </CTAButton>
             </div>
@@ -287,14 +280,40 @@ export default function RequestPricingPage() {
         </div>
       </Section>
 
+      <section aria-labelledby="virtual-visits" className="bg-navy-900 text-white">
+        <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:gap-12">
+          <div>
+            <h2 id="virtual-visits" className="scroll-mt-24 text-3xl font-bold tracking-tight sm:text-4xl">
+              Virtual Author Visits
+            </h2>
+            <p className="mt-4 text-xl font-semibold leading-relaxed sm:text-2xl">
+              $350 per session · 45–60 minutes
+            </p>
+          </div>
+          <div className="text-lg leading-relaxed text-navy-100">
+            <p>
+              Bring Mark to your school virtually! Choose either the{" "}
+              <strong className="font-semibold text-white">Growth Mindset presentation</strong>{" "}
+              or <strong className="font-semibold text-white">StoryDogs</strong>,
+              with time for students to ask questions.
+            </p>
+            <p className="mt-4">
+              <strong className="font-semibold text-white">Discounts are available when multiple sessions are booked.</strong>{" "}
+              Ask Mark for details when you submit your request.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section aria-labelledby="contact" className="bg-cream">
         <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6 sm:py-20">
           <h2 id="contact" tabIndex={-1} className="scroll-mt-24 text-3xl font-bold tracking-tight text-navy-900 focus:outline-none sm:text-4xl">
             Request Pricing &amp; Availability
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-ink-soft">
-            Share your school&apos;s details and preferred dates. Mark will
-            follow up with availability and a quote.
+            Share your school&apos;s details and preferred dates to request
+            pricing for an in-person visit or ask about discounts for multiple
+            virtual sessions. Mark will follow up with availability and a quote.
           </p>
           <p className="mt-4 rounded-xl border border-navy-100 bg-white px-4 py-3 text-sm font-medium text-navy-900">
             Submitting this form requests availability and a quote; it does not confirm a booking.
